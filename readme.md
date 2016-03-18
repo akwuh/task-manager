@@ -1,3 +1,6 @@
+### Demo
+A demo for this application is available at [akwuh.me/task-manager](http://akwuh.me/task-manager)
+
 ### Prerequisities
 In order to work with this application in development mode you should install `node` and `npm` on your machine
 
