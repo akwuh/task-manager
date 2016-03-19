@@ -12,9 +12,8 @@ let TaskView = ItemView.extend({
 		'click [data-action="state:done"]': function() {this.model.set('state', 'done')},
 		'click [data-action="delete"]': function() {this.model.destroy()}
 	},
-	initialize() {
-		this.listenTo(this.model, 'change', this.render)
-		this.listenTo(this.model, 'destroy', this.remove)
+	modelEvents: {
+		'change': 'render'
 	}
 
 })
